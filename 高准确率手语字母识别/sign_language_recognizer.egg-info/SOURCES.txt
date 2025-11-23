@@ -1,0 +1,8 @@
+README.md
+setup.py
+sign_language_recognizer.egg-info/PKG-INFO
+sign_language_recognizer.egg-info/SOURCES.txt
+sign_language_recognizer.egg-info/dependency_links.txt
+sign_language_recognizer.egg-info/entry_points.txt
+sign_language_recognizer.egg-info/requires.txt
+sign_language_recognizer.egg-info/top_level.txt

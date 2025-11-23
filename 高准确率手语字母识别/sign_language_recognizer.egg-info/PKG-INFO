@@ -1,0 +1,189 @@
+Metadata-Version: 2.4
+Name: sign_language_recognizer
+Version: 1.0.0
+Summary: 汉语手指字母（手语字母）实时识别软件
+Home-page: https://github.com/yourusername/sign_language_recognizer
+Author: 手语识别项目组
+Author-email: contact@example.com
+License: MIT
+Keywords: sign language,gesture recognition,hand tracking,computer vision
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Multimedia :: Video :: Capture
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python>=4.8.0
+Requires-Dist: mediapipe==0.10.21
+Requires-Dist: numpy<2.0.0,>=1.26.0
+Requires-Dist: scikit-learn>=1.3.2
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: Pillow==10.1.0
+Requires-Dist: pygame==2.5.2
+Requires-Dist: streamlit>=1.28.0
+Provides-Extra: web
+Requires-Dist: streamlit>=1.28.0; extra == "web"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: black>=23.10.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 汉语手指字母识别软件
+
+这是一个基于计算机视觉和机器学习的汉语手指字母（手语字母）识别软件，可以实时识别30个不同的手语字母手势（A-Z, ZH, CH, SH, NG）。
+
+## ✨ 功能特点
+
+- 🎥 实时摄像头手语识别
+- 📚 支持30个汉语手指字母
+- 🔍 可视化手部关键点检测
+- 🎨 简洁易用的图形界面
+- 🤖 基于机器学习的智能识别
+- 📊 置信度评估和结果平滑
+
+## 📋 系统要求
+
+- Python 3.12+
+- 摄像头（内置或外接 USB）
+- macOS / Windows / Linux
+
+## 🚀 快速开始
+
+### 方法一：作为Python包安装（推荐）
+
+```bash
+# 安装包
+pip install -e .
+
+# 收集训练数据
+sign-language-collector
+
+# 训练模型
+sign-language-trainer
+
+# 运行识别软件
+sign-language-recognizer
+```
+
+### 方法二：直接运行Web应用
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 运行Web应用
+streamlit run streamlit_app.py
+```
+
+### 方法三：传统方式运行
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 收集训练数据
+python data_collector.py
+
+# 训练模型
+python train_model.py
+
+# 运行识别软件
+python main.py
+```
+
+## 📖 详细文档
+
+**完整用户手册**: 请查看 [`用户手册.md`](用户手册.md)
+
+手册包含：
+- 📘 详细的安装指南
+- 📗 完整的使用说明
+- 📙 手势动作详解
+- 📕 常见问题解答
+- 🔧 故障排除指南
+
+## 🎯 支持的手势
+
+软件支持识别以下30个手语字母：
+- **A-Z**（26个英文字母）
+- **ZH, CH, SH, NG**（4个汉语拼音声母）
+
+详细手势说明请参考 [`gesture_guide.md`](gesture_guide.md)
+
+## 💡 使用提示
+
+1. ✅ 确保摄像头正常工作
+2. ✅ 在良好的光照条件下使用
+3. ✅ 将手放在摄像头前，保持手势清晰
+4. ✅ 每个手势保持2-3秒以便识别
+5. ✅ 确保手部完全在摄像头视野内
+
+## 📁 项目结构
+
+```
+sign_language_recognition/
+├── main.py                 # 主程序（手势识别）
+├── data_collector.py       # 数据收集工具
+├── train_model.py          # 模型训练脚本
+├── hand_landmarks.py        # 手部关键点检测
+├── gesture_classifier.py   # 手势分类器
+├── streamlit_app.py        # Web应用界面
+├── setup.py                # Python包安装配置
+├── requirements.txt        # 依赖库列表
+├── README.md              # 项目说明（本文件）
+├── 安装使用指南.md         # 安装和使用详细指南
+├── 用户手册.md            # 完整用户手册
+├── gesture_guide.md       # 手势指南
+└── IMPROVEMENTS.md        # 改进说明
+```
+
+## 🔧 技术栈
+
+- **计算机视觉**: OpenCV, MediaPipe
+- **机器学习**: scikit-learn (Random Forest)
+- **数据处理**: NumPy
+- **Web界面**: Streamlit
+- **编程语言**: Python 3.12
+
+## 📦 封装方式
+
+本项目提供两种主要的封装方式：
+
+### 1. Python包
+- 可通过pip安装
+- 提供命令行工具
+- 适合开发者集成和扩展
+
+### 2. Streamlit Web应用
+- 提供直观的图形界面
+- 无需编程知识即可使用
+- 支持本地运行和云端部署
+- 可通过移动设备访问
+
+## 📝 许可证
+
+本项目仅供学习和研究使用。
+
+## 🤝 贡献
+
+欢迎提交 Issue 或 Pull Request！
+
+---
+
+**详细使用说明请查看 [`用户手册.md`](用户手册.md)**
+
