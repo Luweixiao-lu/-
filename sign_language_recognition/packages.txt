@@ -1,4 +1,0 @@
-# Streamlit Cloud 部署所需的系统包（如果需要）
-# 通常不需要，但某些情况下可能需要
-# opencv-python-headless
-
