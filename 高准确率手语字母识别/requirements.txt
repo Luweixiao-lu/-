@@ -1,0 +1,10 @@
+# Streamlit Cloud部署优化依赖
+# 移除所有版本限制，让pip自动选择兼容的版本
+opencv-python
+numpy
+scikit-learn
+scipy
+Pillow
+streamlit
+mediapipe
+
