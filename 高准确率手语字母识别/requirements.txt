@@ -1,12 +1,9 @@
-# 基础依赖 - 使用广泛兼容的版本范围
-opencv-python>=4.5.5,<4.9.0
-mediapipe>=0.10.0,<0.11.0
-numpy>=1.21.0,<2.0.0
-scikit-learn>=1.0.0,<2.0.0
-scipy>=1.7.0,<2.0.0
-Pillow>=9.0.0,<11.0.0
-streamlit>=1.15.0,<2.0.0
-
-# 可选依赖（移除pygame，减少依赖复杂度）
-# pygame>=2.1.0
-
+# 精简的部署依赖文件 - 专为Streamlit Cloud优化
+# 使用最小依赖集，避免版本冲突
+opencv-python-headless
+mediapipe
+numpy
+scikit-learn
+scipy
+Pillow
+streamlit
