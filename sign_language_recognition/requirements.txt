@@ -1,9 +1,0 @@
-opencv-python-headless>=4.8.0
-mediapipe>=0.10.0
-numpy>=1.24.0,<2.0.0
-scikit-learn>=1.3.0
-scipy>=1.10.0
-Pillow>=10.0.0
-streamlit>=1.28.0
-# tensorflow>=2.16.0  # 可选：如果需要深度学习功能，取消注释（注意：与 mediapipe 的 protobuf 要求可能冲突）
-
