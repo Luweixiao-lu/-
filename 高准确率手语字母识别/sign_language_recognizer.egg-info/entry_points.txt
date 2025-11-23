@@ -1,4 +1,0 @@
-[console_scripts]
-sign-language-collector = data_collector:main
-sign-language-recognizer = main:main
-sign-language-trainer = train_model:train_model
