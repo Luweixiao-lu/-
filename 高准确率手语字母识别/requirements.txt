@@ -1,0 +1,11 @@
+# Streamlit Cloud部署优化依赖
+# 移除严格版本限制，确保与Python 3.9+兼容
+opencv-python-headless>=4.5.5.62
+numpy>=1.21.0
+scikit-learn>=1.1.0
+scipy>=1.9.0
+Pillow>=9.0.0
+streamlit>=1.20.0
+# 使用更宽松的mediapipe版本约束，兼容Streamlit Cloud
+mediapipe>=0.10.13
+
